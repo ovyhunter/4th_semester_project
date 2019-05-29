@@ -1,7 +1,67 @@
 * {
     margin: 0;
     border: 0;
+    scroll-behavior: smooth;
 }
+
+section{
+    height: 100vh;
+}
+
+/* First section */
+
+#section1{
+    background-image:url(assets/images/landing-page-picture.jpg);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#section1 h1, #section1 h3{
+    color: #ffffff;
+    text-shadow:1px 1px 5px #000000;
+}
+
+.first-section-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5vw;
+    margin-top: 20vh;
+}
+
+.first-section-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.partners img{
+    max-height: auto;
+    max-width: 10vw;
+    margin-top: 10vh;
+    margin-right: 3vw;
+}
+
+.social img{
+    max-height: auto;
+    max-width: 3vw;
+    margin-right: 5vw;
+    margin-top: 10vh;
+}
+
+/* Go To Button */
+
+.goToButton{
+    background-color: rgb(255, 139, 30);
+    color: #ffffff;
+    font-size: 1.5em;
+    width: 10vw;
+    height: 8vh;
+    margin: 5vh 1vw 22vh 1vw;
+}
+
+
 
 /* Burger menu */
 
@@ -82,7 +142,7 @@
     }
 
     .navbar{
-        background-color: #000000;
+        background-color: transparent;
     }
 
     .navbar-light .navbar-brand {
@@ -108,14 +168,18 @@
     .nav-link-custom{
         display: block;
         padding: .5rem 1rem;
-        color: rgba(255, 255, 255, 0.59);
+        color: #ffffff;
+        text-shadow:1px 1px 10px #000000, 1px 1px 10px rgb(0, 0, 0);
+        font-size: 1.2em;
     }
 
     .nav-link-custom:hover{
-        color: #ffffff;
         text-decoration: none;
+        color: #d3d3d3;
+        cursor: pointer;
     }
 
-    .active{
-        color: rgba(255, 255, 255, 1);
+    #navbarNav{
+        justify-content: flex-end;
+        background-color: rgba(255, 255, 255, 0.1);
     }
