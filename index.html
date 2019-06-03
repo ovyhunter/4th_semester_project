@@ -6,37 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script src="jquery.fullpage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
+    <script src="script.js"></script>
+
     <title>QL Fragt ApS</title>
 </head>
 <body>
-  <section id="section1">
     <header>
-            <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="navbar-brand-custom" href="#">QL Fragt ApS</a>
-                    <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                      <div class="animated-icon1"><span></span><span></span><span></span></div>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                      <ul class="navbar-nav">
-                        <li class="nav-item">
-                          <a class="nav-link-custom" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link-custom" href="#section2">About</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link-custom" href="#section3">Services</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link-custom" href="#section4">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link-custom" href="#section5">Contact</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </nav>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand-custom" href="#">QL Fragt ApS</a>
+        <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="animated-icon1"><span></span><span></span><span></span></div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link-custom" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link-custom" href="#section2">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link-custom" href="#section3">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link-custom" href="#section4">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link-custom" href="#section5">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
+  <div id="fullpage">
+  <section class="panel">
     <div class="first-section-wrapper">
       <main id="main-page">
     <h1 class="title-paragraph">Transporting in seconds</h1>
@@ -56,22 +66,22 @@
     </div>
   </div>
   </section>
-  <section id="section2">
+  <section class="panel">
     <div class="second-section-wrapper">
-      <h1>About us, what do we do and how</h1>
-      <h2>Fast, safe, reliable</h2>
+      <h1 class="main-title">About us, what do we do and how</h1>
+      <h2 class="main-subtitle">Fast, safe, reliable</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, Ut enim ad minim veniam. Elitas mandatore pero questa dimensiunes arborhales.<br>Transporting your cargo with maximum precision to it’s final destination with a safe, reliable and qualitative service.We are recommended by thousands of companies.</p>
       <div class="video-container"><iframe width="853" height="480" src="https://www.youtube.com/embed/z9Ul9ccDOqE" frameborder="0" allowfullscreen></iframe></div>
     </div>
   </section>
-  <section id="section3"></section>
-  <section id="section4"></section>
-  <section id="section5"></section>
-  <section id="section6"></section>
+  <section></section>
+  <section></section>
+  <section></section>
+  <section></section>
   <footer></footer>
+</div>
+<script type="text/javascript">
+    $('#fullpage').fullpage();
+</script>
 </body>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script src="script.js"></script>
 </html>

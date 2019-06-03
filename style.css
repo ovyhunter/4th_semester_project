@@ -10,20 +10,25 @@
     letter-spacing: 1px;
 }
 
-section{
+#fullpage{
+    height: 100vh;
+    overflow: hidden;
+}
+
+#fullpage section{
     height: 100vh;
 }
 
 /* First section */
 
-#section1{
+#fullpage section:nth-child(1){
     background-image:url(assets/images/landing-page-picture.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
 }
 
-#section1 h1, #section1 h3{
+section:nth-child(1) h1, section:nth-child(1) h3{
     color: #ffffff;
     text-shadow:1px 1px 5px #000000;
 }
@@ -31,6 +36,7 @@ section{
 .title-paragraph{
     font-size: 2.5em;
     margin: inherit;
+    margin-top: 20vh;
 }
 
 .subtitle-paragraph{
@@ -56,7 +62,6 @@ section{
     flex-flow: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20vh;
 }
 
 .partners img{
@@ -96,7 +101,7 @@ section{
     flex-flow: column;
 }
 
-.second-section-wrapper h1{
+.main-title{
     color: #fa8740;
     font-weight: bold;
     font-style: normal;
@@ -107,7 +112,7 @@ section{
     margin-top: 10vh;
 }
 
-.second-section-wrapper h2{
+.main-subtitle{
     font-family: Lora;
     font-weight: normal;
     font-style: normal;
@@ -129,6 +134,8 @@ section{
     margin: 5%;
 }
 
+/* Responsive YouTube embed: https://avexdesigns.com/responsive-youtube-embed/ */
+
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -147,25 +154,25 @@ section{
 
 /* Third section */
 
-#section3{
+#fullpage section:nth-child(3){
     background-color: bisque;
 }
 
 /* Fourth section */
 
-#section4{
+#fullpage section:nth-child(4){
     background-color: beige;
 }
 
 /* Fifth section */
 
-#section5{
+#fullpage section:nth-child(5){
     background-color: blanchedalmond;
 }
 
 /* Sixth section */
 
-#section6{
+#fullpage section:nth-child(6){
     background-color: azure;
 }
 
