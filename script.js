@@ -5,7 +5,3 @@ $(document).ready(function () {
     $('.animated-icon1').toggleClass('open');
   });
 });
-
-$(window).scroll(function(){
-	$('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
-});
