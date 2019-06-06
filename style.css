@@ -698,8 +698,11 @@ section:nth-of-type(6){
     line-height: normal;
     letter-spacing: normal;
     color: #8178D2;
-    text-decoration: none;
     margin: 1vh 1vw;
+}
+
+.map-link:hover{
+    text-decoration: none;
 }
 
 .map-responsive{
@@ -877,14 +880,15 @@ input[type=submit]:hover {
 
     .second-section-wrapper p{
         margin: 5vh 5vw;
+        font-size: 1.2em;
     }
 
     .d-title-button{
         display: flex;
         flex-flow: column;
         height: inherit;
-        width: 20vw;
-        margin-left: 3vw;
+        width: 70%;
+        margin-left: 7vw;
     }
 
     .boxes-wrapper{
@@ -902,7 +906,7 @@ input[type=submit]:hover {
     }
 
     .protect-wrapper{
-        margin: 1vh 21vw;
+        margin: 1vh 28vw;
     }
 
     .protect-wrapper img{
@@ -932,7 +936,16 @@ input[type=submit]:hover {
     }
 
     .fifth-section-wrapper{
-        flex-flow: row-reverse;
+        flex-flow: column;
+        justify-content: space-evenly;
+        margin-top: 0vh !important;
+    }
+
+    .fifth-section-wrapper .text-wrapper{
+        display: flex;
+        flex-direction: row;
+        height: inherit;
+        margin: 2vh 3vw 2vh 3vw;
         justify-content: space-evenly;
     }
 
@@ -942,6 +955,7 @@ input[type=submit]:hover {
 
     .fifth-section-wrapper .text-wrapper h1{
         width: 20vw;
+        margin-top: 8vh;
     }
 
     .main-wrapper h2, .main-wrapper p:nth-of-type(1), .main-wrapper .goToButton, .main-wrapper p:nth-of-type(2), .main-wrapper .blog-social img{
@@ -952,9 +966,9 @@ input[type=submit]:hover {
     }
 
     .staff-wrapper{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-gap: 2em;
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: row;
     }
 
     .sub-text-wrapper{
